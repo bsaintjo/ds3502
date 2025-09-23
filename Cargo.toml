@@ -2,6 +2,10 @@
 name = "ds3502"
 version = "0.1.0"
 edition = "2024"
+authors = ["Brandon Saint-John <branstj@gmail.com>"]
+license = "Apache-2.0 OR MIT"
+keywords = ["i2c", "ds3502", "potentiometer", "digipot", "no_std"]
+categories = ["no-std", "embedded"]
 
 [dependencies]
 embedded-hal = "1.0.0"
