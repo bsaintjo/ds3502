@@ -6,7 +6,7 @@
 ![Crates.io Version](https://img.shields.io/crates/v/ds3502)
 ![docs.rs](https://img.shields.io/docsrs/ds3502)
 ![Crates.io MSRV](https://img.shields.io/crates/msrv/ds3502)
-![embedded-hal Version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fgithub.com%2Fbsaintjo%2Fds3502%2Fblob%2Fmain%2FCargo.toml&query=%24.dependencies.embedded_hal&label=embedded-hal)
+![embedded-hal Version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbsaintjo%2Fds3502%2Frefs%2Fheads%2Fmain%2FCargo.toml&query=%24.dependencies.embedded-hal&label=embedded-hal)
 
 Rust embedded driver for the DS3502 Digital Potentiometer by Analog Devices Inc./Maxim Integrated. Supports block and async APIs.
 
