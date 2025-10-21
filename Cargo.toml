@@ -1,3 +1,6 @@
+[workspace]
+members = [".", "examples/*"]
+
 [package]
 name = "ds3502"
 version = "0.1.0"
@@ -6,7 +9,17 @@ authors = ["Brandon Saint-John <branstj@gmail.com>"]
 license = "Apache-2.0 OR MIT"
 keywords = ["i2c", "ds3502", "potentiometer", "digipot", "no_std"]
 categories = ["no-std", "embedded"]
+rust-version = "1.85"
+description = "Driver for the Analog Devices Inc./Maxim Integrated DS3502 digital potentiometer"
 
 [dependencies]
 embedded-hal = "1.0.0"
 embedded-hal-async = "1.0.0"
+thiserror = { version = "2.0.17", default-features = false }
+
+[dev-dependencies]
+embedded-hal-mock = { version = "0.11.1", default-features = false, features = [
+    "eh1",
+    "embedded-hal-async",
+] }
+futures-lite = { version = "2.6.1", default-features = false, features = ["std"] }
