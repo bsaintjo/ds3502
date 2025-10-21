@@ -27,7 +27,8 @@ let wv = Wiper::try_from(123)?;
 digipot.write_and_save_wiper(wv);
 ```
 
-[Complete example with the Raspberry Pi Pico and `embassy`](http://github.com/bsaintjo/ds3502/blob/main/examples/pico-example/)
+For a complete example that builds and flashes to a Raspberry Pi Pico using the `embassy` framework,
+checkout the [`pico-example`](http://github.com/bsaintjo/ds3502/blob/main/examples/pico-example/) directory.
 
 ## Installation
 
@@ -41,8 +42,8 @@ ds3502 = "0.1"
 
 Licensed under either of
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](http://www.github.com/bsaintjo/ds3502/blob/HEAD/LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
-- MIT license ([LICENSE-MIT](http://www.github.com/bsaintjo/ds3502/blob/HEAD/LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
+- Apache License, Version 2.0 ([LICENSE-APACHE](http://www.github.com/bsaintjo/ds3502/blob/main/LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT license ([LICENSE-MIT](http://www.github.com/bsaintjo/ds3502/blob/main/LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
 

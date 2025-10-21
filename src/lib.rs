@@ -44,7 +44,8 @@
 //! # }
 //! ```
 //!
-//! [Complete example with the Raspberry Pi Pico and `embassy`](http://github.com/bsaintjo/ds3502/blob/main/examples/pico-example/)
+//! For a complete example that builds and flashes to a Raspberry Pi Pico using the `embassy` framework,
+//! checkout the [`pico-example`](http://github.com/bsaintjo/ds3502/blob/main/examples/pico-example/) directory.
 //!
 //! ## Installation
 //!
@@ -58,8 +59,8 @@
 //!
 //! Licensed under either of
 //!
-//! - Apache License, Version 2.0 ([LICENSE-APACHE](http://www.github.com/bsaintjo/ds3502/blob/HEAD/LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
-//! - MIT license ([LICENSE-MIT](http://www.github.com/bsaintjo/ds3502/blob/HEAD/LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
+//! - Apache License, Version 2.0 ([LICENSE-APACHE](http://www.github.com/bsaintjo/ds3502/blob/main/LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+//! - MIT license ([LICENSE-MIT](http://www.github.com/bsaintjo/ds3502/blob/main/LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 //!
 //! at your option.
 //!
@@ -76,14 +77,6 @@ use embedded_hal_async::i2c::I2c as AsyncI2c;
 ///
 /// The DS3502 has address pins A1 and A0 to natively support up to four
 /// DS3502s on the same I2C bus.
-///
-/// Choose the I2C address based on your address pin configuration
-/// | A1 | A0 | Address | I2cAddr |
-/// |---|---|---|---|
-/// | low | low | 0x28 | [`I2cAddr::Default`] |
-/// | low | high | 0x29 | [`I2cAddr::Address0`] |
-/// | high | low | 0x2a | [`I2cAddr::Address1`] |
-/// | high | high | 0x2b | [`I2cAddr::Address01`] |
 #[repr(u8)]
 #[derive(Debug, Copy, Clone, Hash, Eq, PartialEq)]
 pub enum I2cAddr {
